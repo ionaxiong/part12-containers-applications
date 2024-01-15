@@ -1,0 +1,29 @@
+Script started on 2024-01-15 16:50:31+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="133" LINES="108"]
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docj[K[K[K[Kdocker start -i 7227a5e7c6ed
+[?2004h]0;root@7227a5e7c6ed: /root@7227a5e7c6ed:/# 
+[K]0;root@7227a5e7c6ed: /root@7227a5e7c6ed:/# cd   /usr/src/app/
+[?2004l
+[?2004h]0;root@7227a5e7c6ed: /usr/src/approot@7227a5e7c6ed:/usr/src/app# touch inde          touch index.js
+[?2004l
+[?2004h]0;root@7227a5e7c6ed: /usr/src/approot@7227a5e7c6ed:/usr/src/app# ls
+[?2004l
+index.js
+[?2004h]0;root@7227a5e7c6ed: /usr/src/approot@7227a5e7c6ed:/usr/src/app# nano index.js  
+[?2004l
+[?2004h[?1049h[22;0;0t[1;108r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[106;60H(B[0;7m[ Reading... ](B[m[106;59H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 6.2 [50bindex.js [58b [1;132H(B[m
+[107d(B[0;7m^G(B[m Help[107;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[107;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[107;113H(B[0;7mM-A(B[m Set Mark
+[108d(B[0;7m^X(B[m Exit[108;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[108;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[108;113H(B[0;7mM-6(B[m Copy
+[2d[?12l[?25h[?25l[106d[K[1;75H(B[0;7m*[132G(B[m
+[2dconsole.log((B[0;1m[35m'Hello World'[39m(B[m)[?12l[?25h[?25l[107;17H[17X[107;34H(B[0;7mM-D(B[m DOS Format [6b[107;65H  (B[0;7mM-A(B[m Append[23X[107;100H(B[0;7mM-B(B[m Backup File[K[108;2H(B[0;7mC(B[m Cancel[17G[17X[108;34H(B[0;7mM-M(B[m Mac Format [8b[108;65H  (B[0;7mM-P(B[m Prepend[22X[108;100H(B[0;7m^T(B[m Browse[K
+[106d(B[0;7mFile Name to Write: index.js [103b [106;29H(B[m[?12l[?25h[?25l[106;59H[1K (B[0;7m[ Writing... ](B[m[K[1;75H(B[0;7m [132G(B[m[106;59H(B[0;7m[ Wrote 1 line ](B[m[107;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[107;65H(B[0;7m^T(B[m Execute      (B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo [7b(B[0;7mM-A(B[m Set Mark[108;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace      (B[0;7m^U(B[m Paste[108;65H(B[0;7m^J(B[m Justify      (B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo [7b(B[0;7mM-6(B[m Copy[?12l[?25h[2;27H[?25l
+[106d[J[108d[?12l[?25h[108;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;root@7227a5e7c6ed: /usr/src/approot@7227a5e7c6ed:/usr/src/app# cat index.js 
+[?2004l
+console.log('Hello World')
+[?2004h]0;root@7227a5e7c6ed: /usr/src/approot@7227a5e7c6ed:/usr/src/app# exit
+[?2004l
+exit
+e]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# exit
+exit
+
+Script done on 2024-01-15 16:51:59+02:00 [COMMAND_EXIT_CODE="0"]

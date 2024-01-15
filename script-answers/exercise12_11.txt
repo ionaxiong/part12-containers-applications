@@ -1,0 +1,31 @@
+Script started on 2024-01-15 22:09:15+02:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="133" LINES="108"]
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docker container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                     NAMES
+76bf4d79b0a2   redis     "docker-entrypoint.s…"   29 minutes ago   Up 29 minutes   0.0.0.0:6379->6379/tcp    todo-backend-redis-1
+eb0221d63371   mongo     "docker-entrypoint.s…"   29 minutes ago   Up 29 minutes   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docker exec -it 76bf4d79b0a2 bash
+[?2004hroot@76bf4d79b0a2:/data# [Kroot@76bf4d79b0a2:/data# KEYS *
+[?2004lbash: KEYS: command not found
+[?2004hroot@76bf4d79b0a2:/data# ls
+[?2004l[?2004hroot@76bf4d79b0a2:/data# [7mtodos[27mtodos
+[?2004lbash: todos: command not found
+[?2004hroot@76bf4d79b0a2:/data# [7mredis-cli[27mredis-cli todos
+[?2004l(error) ERR unknown command 'todos', with args beginning with: 
+[?2004hroot@76bf4d79b0a2:/data# redis-cli todos      
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> t[17C[0K127.0.0.1:6379> to[18C[0K127.0.0.1:6379> tod[19C[0K127.0.0.1:6379> todo[20C[0K127.0.0.1:6379> todos[21C[0K127.0.0.1:6379> todos[21C
+(error) ERR unknown command 'todos', with args beginning with: 
+127.0.0.1:6379> [0K127.0.0.1:6379> g[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET t[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET to[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET tod[0;90;49m key[0m[23C[0K127.0.0.1:6379> GET todo[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET todos[0;90;49m key[0m[25C[0K127.0.0.1:6379> GET todos[25C
+"112"
+127.0.0.1:6379> [0K127.0.0.1:6379> S[17C[0K127.0.0.1:6379> SE[18C[0K127.0.0.1:6379> SET[19C[0K127.0.0.1:6379> SET [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[20C[0K127.0.0.1:6379> SET t[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[21C[0K127.0.0.1:6379> SET to[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL[0m[22C[0K127.0.0.1:6379> SET tod[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTT[0m[23C[0K127.0.0.1:6379> SET todo[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPT[0m[24C[0K127.0.0.1:6379> SET todos[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEP[0m[25C[0K127.0.0.1:6379> SET todos [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[26C[0K127.0.0.1:6379> SET todos 9[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTT[0m[27C[0K127.0.0.1:6379> SET todos 90[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPT[0m[28C[0K127.0.0.1:6379> SET todos 900[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEP[0m[29C[0K127.0.0.1:6379> SET todos 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEE[0m[30C[0K127.0.0.1:6379> SET todos 9001[30C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL t[0;90;49m key [key ...][0m[21C[0K127.0.0.1:6379> DEL to[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> DEL tod[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> DEL todo[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> DEL todos[0;90;49m key [key ...][0m[25C[0K127.0.0.1:6379> DEL todos[25C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET t[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET to[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET tod[0;90;49m key[0m[23C[0K127.0.0.1:6379> GET todo[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET todos[0;90;49m key[0m[25C[0K127.0.0.1:6379> GET todos[25C
+(nil)
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004hroot@76bf4d79b0a2:/data# exit
+[?2004lexit
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# exit
+exit
+
+Script done on 2024-01-15 22:20:20+02:00 [COMMAND_EXIT_CODE="0"]

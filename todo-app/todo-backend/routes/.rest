@@ -10,6 +10,6 @@ POST http://localhost:3000/todos
 Content-Type: application/json
 
 {
-    "text": "Test redis again, hope it will work",
-    "done": false
+    "text": "some text for testing",
+    "done": true
 }

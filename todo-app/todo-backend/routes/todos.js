@@ -16,13 +16,9 @@ router.post("/", async (req, res) => {
     text: req.body.text,
     done: false,
   });
+  const count = await redis.getAsync("todos");
   if (todo) {
-    const count = await redis.getAsync("todos");
-    if (count) {
-      await redis.setAsync("todos", toDoCounter(count));
-    } else {
-      await redis.setAsync("todos", 1);
-    }
+    await redis.setAsync("todos", toDoCounter(count));
     res.send(todo);
   }
 });

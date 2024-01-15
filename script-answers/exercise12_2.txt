@@ -1,0 +1,623 @@
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# script typescript bash -c 'echo "hello"'
+Script started, file is typescript
+hello
+Script done, file is typescript
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docker 
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context
+                           set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.9.1)
+  compose*    Docker Compose (Docker Inc., v2.13.0)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.0.5)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.16)
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan*       Docker Scan (Docker Inc., v0.22.0)
+  secret  o create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docker r[Kcontainer run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K
+a48641193673: Pulling fs layer 
+[1B[1A[2K
+a48641193673: Downloading [>                                                  ]  310.6kB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==>                                                ]  1.243MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===>                                               ]  2.173MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [====>                                              ]  2.796MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=====>                                             ]  3.418MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [======>                                            ]  4.041MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=======>                                           ]  4.655MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=========>                                         ]  5.589MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==========>                                        ]  6.212MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [============>                                      ]  7.138MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=============>                                     ]   7.76MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==============>                                    ]  8.686MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===============>                                   ]  9.304MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=================>                                 ]  10.24MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==================>                                ]  11.17MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===================>                               ]  11.79MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=====================>                             ]  12.42MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [======================>                            ]  13.04MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=======================>                           ]  13.96MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=========================>                         ]  15.21MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===========================>                       ]  16.13MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [============================>                      ]  17.06MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=============================>                     ]  17.68MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==============================>                    ]  18.31MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [================================>                  ]  18.93MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=================================>                 ]  19.86MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==================================>                ]  20.48MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===================================>               ]   21.1MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=====================================>             ]  22.03MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [======================================>            ]  22.96MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [========================================>          ]  23.89MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [=========================================>         ]  24.51MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==========================================>        ]  25.13MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===========================================>       ]  25.75MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [============================================>      ]  26.38MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [==============================================>    ]  27.31MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [===============================================>   ]  27.93MB/29.55MB
+[1B[1A[2K
+a48641193673: Downloading [================================================>  ]  28.86MB/29.55MB
+[1B[1A[2K
+a48641193673: Verifying Checksum 
+[1B[1A[2K
+a48641193673: Download complete 
+[1B[1A[2K
+a48641193673: Extracting [>                                                  ]  327.7kB/29.55MB
+[1B[1A[2K
+a48641193673: Extracting [=============>                                     ]  7.864MB/29.55MB
+[1B[1A[2K
+a48641193673: Extracting [=========================>                         ]  15.07MB/29.55MB
+[1B[1A[2K
+a48641193673: Extracting [==========================================>        ]   24.9MB/29.55MB
+[1B[1A[2K
+a48641193673: Extracting [================================================>  ]  28.51MB/29.55MB
+[1B[1A[2K
+a48641193673: Extracting [==================================================>]  29.55MB/29.55MB
+[1B[1A[2K
+a48641193673: Pull complete 
+[1BDigest: sha256:6042500cf4b44023ea1894effe7890666                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            b0c5c7871ed83a97c36c76ae560bb9b
+Status: Downloaded newer image for ubuntu:latest
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             plicator:7.3.1   "sleep infinity"         12 months ago   Exited (255) 12 months ago   8083/tcp, 9092/tcp                                     replicator-for-jar-transfer
+d3abd7c793c9   bitnami/kafka:latest                          "/opt/bitnami/script…"   2 years ago     Exited (255) 23 months ago   0.0.0.0:9092->9092/tcp                                 kafka-shopify
+46af346e43ef   bitnami/zookeeper:latest                      "/opt/bitnami/script…"   2 years ago     Exited (255) 23 months ago   2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp, 8080/tcp   mock_db_zookeeper_1
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# exit
+exit
+
+Script done on 2024-01-15 15:52:22+02:00 [COMMAND_EXIT_CODE="0"]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       he packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan*       Docker Scan (Docker Inc., v0.22.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
+
+]0;root@DESKTOP-PQST45R: /mnt/c/Users/iona/projects/part12-containers-applications/script-answersroot@DESKTOP-PQST45R:/mnt/c/Users/iona/projects/part12-containers-applications/script-answers# docker c[Kstart -i 7227a5e7c6ed
+[?2004h]0;root@7227a5e7c6ed: /root@7227a5e7c6ed:/# 
+[K]0;root@7227a5e7c6ed: /root@7227a5e7c6ed:/# [7mapt-get update[27mapt-get update
+[?2004l
+
+0% [Working]
+            
+Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+
+0% [1 InRelease 4072 B/270 kB 2%] [Waiting for headers]
+                                                       
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+
+0% [1 InRelease 14.3 kB/270 kB 5%] [2 InRelease 4072 B/110 kB 4%]
+                                                                 
+0% [1 InRelease 162 kB/270 kB 60%]
+0% [1 InRelease 214 kB/270 kB 79%]
+                                  
+0% [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1340 kB]
+
+0% [Waiting for headers] [3 Packages 2709 B/1340 kB 0%]
+                                                       
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+
+0% [4 InRelease 5532 B/119 kB 5%] [3 Packages 48.0 kB/1340 kB 4%]
+                                                                 
+0% [3 Packages 94.7 kB/1340 kB 7%]
+0% [Waiting for headers] [3 Packages 141 kB/1340 kB 11%]
+                                                        
+Get:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+
+0% [5 InRelease 4072 B/109 kB 4%] [3 Packages 217 kB/1340 kB 16%]
+                                                                 
+0% [3 Packages 270 kB/1340 kB 20%]
+15% [Waiting for headers] [3 Packages 401 kB/1340 kB 30%]
+                                                         
+Get:6 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+
+15% [6 Packages 2681 B/266 kB 1%] [3 Packages 527 kB/1340 kB 39%]
+                                                                 
+18% [Waiting for headers] [3 Packages 1055 kB/1340 kB 79%]
+                                                          
+Get:7 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+
+18% [7 Packages 11.2 kB/164 kB 7%] [3 Packages 1055 kB/1340 kB 79%]
+18% [6 Packages store 0 B] [7 Packages 17.1 kB/164 kB 10%] [3 Packages 1055 kB/1340 kB 79%]
+                                                                                           
+18% [7 Packages 49.2 kB/164 kB 30%] [3 Packages 1073 kB/1340 kB 80%]
+                                                                    
+19% [Waiting for headers] [3 Packages 1206 kB/1340 kB 90%]
+                                                          
+Get:8 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+
+19% [8 Packages 2081 B/1792 kB 0%] [3 Packages 1206 kB/1340 kB 90%]
+19% [7 Packages store 0 B] [8 Packages 2081 B/1792 kB 0%] [3 Packages 1207 kB/1340 kB 90%]
+                                                                                          
+20% [8 Packages 18.1 kB/1792 kB 1%] [3 Packages 1229 kB/1340 kB 92%]
+                                                                    
+21% [8 Packages 564 kB/1792 kB 31%]
+21% [3 Packages store 0 B] [8 Packages 564 kB/1792 kB 31%]
+                                                          
+23% [8 Packages 904 kB/1792 kB 50%] [Waiting for headers]
+                                                         
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1049 kB]
+
+23% [8 Packages 927 kB/1792 kB 52%] [9 Packages 11.5 kB/1049 kB 1%]
+                                                                   
+27% [Waiting for headers] [9 Packages 441 kB/1049 kB 42%]
+                                                         
+Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+
+27% [10 Packages 7256 B/17.5 MB 0%] [9 Packages 441 kB/1049 kB 42%]
+27% [8 Packages store 0 B] [10 Packages 7256 B/17.5 MB 0%] [9 Packages 441 kB/1049 kB 42%]
+                                                                                          
+29% [10 Packages 255 kB/17.5 MB 1%] [9 Packages 880 kB/1049 kB 84%]
+                                                                   
+30% [10 Packages 340 kB/17.5 MB 2%] [Waiting for headers]
+                                                         
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.6 kB]
+
+30% [10 Packages 340 kB/17.5 MB 2%] [11 Packages 4963 B/44.6 kB 11%]
+30% [9 Packages store 0 B] [10 Packages 341 kB/17.5 MB 2%] [11 Packages 4963 B/44.6 kB 11%]
+                                                                                           
+30% [9 Packages store 0 B] [10 Packages 368 kB/17.5 MB 2%]
+                                                          
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1595 kB]
+
+30% [9 Packages store 0 B] [10 Packages 368 kB/17.5 MB 2%] [12 Packages 3773 B/1595 kB 0%]
+                                                                                          
+32% [10 Packages 525 kB/17.5 MB 3%] [12 Packages 302 kB/1595 kB 19%]
+32% [11 Packages store 0 B] [10 Packages 527 kB/17.5 MB 3%] [12 Packages 305 kB/1595 kB 19%]
+                                                                                            
+32% [10 Packages 537 kB/17.5 MB 3%] [12 Packages 320 kB/1595 kB 20%]
+                                                                    
+39% [10 Packages 1495 kB/17.5 MB 9%]
+39% [12 Packages store 0 B] [10 Packages 1495 kB/17.5 MB 9%]
+                                                            
+41% [10 Packages 2159 kB/17.5 MB 12%]
+49% [10 Packages 5191 kB/17.5 MB 30%]
+55% [10 Packages 7129 kB/17.5 MB 41%]
+64% [10 Packages 10.5 MB/17.5 MB 60%]
+71% [10 Packages 13.0 MB/17.5 MB 75%]
+79% [10 Packages 15.8 MB/17.5 MB 91%]
+                                     
+83% [Waiting for headers]
+                         
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1617 kB]
+
+83% [13 Packages 30.4 kB/1617 kB 2%]
+83% [10 Packages store 0 B] [13 Packages 30.4 kB/1617 kB 2%]
+                                                            
+88% [10 Packages store 0 B]
+                           
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1309 kB]
+
+88% [10 Packages store 0 B] [14 Packages 7607 B/1309 kB 1%]
+                                                           
+91% [10 Packages store 0 B]
+                           
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1631 kB]
+
+91% [10 Packages store 0 B] [15 Packages 5258 B/1631 kB 0%]
+                                                           
+95% [15 Packages 1118 kB/1631 kB 69%]
+95% [13 Packages store 0 B] [15 Packages 1118 kB/1631 kB 69%]
+                                                             
+96% [15 Packages 1445 kB/1631 kB 89%]
+96% [14 Packages store 0 B] [15 Packages 1449 kB/1631 kB 89%]
+                                                             
+97% [14 Packages store 0 B]
+                           
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [50.4 kB]
+
+97% [14 Packages store 0 B] [16 Packages 351 B/50.4 kB 1%]
+                                                          
+97% [14 Packages store 0 B]
+                           
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.1 kB]
+
+97% [14 Packages store 0 B] [17 Packages 4870 B/28.1 kB 17%]
+                                                            
+97% [14 Packages store 0 B] [Waiting for headers]
+                                                 
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [50.4 kB]
+
+97% [14 Packages store 0 B] [18 Packages 4278 B/50.4 kB 8%]
+                                                           
+98% [18 Packages 17.5 kB/50.4 kB 35%]
+98% [15 Packages store 0 B] [18 Packages 17.5 kB/50.4 kB 35%]
+98% [15 Packages store 0 B]                                                                                                  4833 kB/s 0s
+98% [Working]                                                                                                                4833 kB/s 0s
+98% [16 Packages store 0 B]                                                                                                  4833 kB/s 0s
+99% [Working]                                                                                                                4833 kB/s 0s
+99% [17 Packages store 0 B]                                                                                                  4833 kB/s 0s
+99% [Working]                                                                                                                4833 kB/s 0s
+99% [18 Packages store 0 B]                                                                                                  4833 kB/s 0s
+100% [Working]                                                                                                               4833 kB/s 0s
+                                                                                                                                         
+Fetched 29.0 MB in 6s (4789 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 63%
+
+Reading package lists... 63%
+
+Reading package lists... 64%
+
+Reading package lists... 64%
+
+Reading package lists... 70%
+
+Reading package lists... 70%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+[?2004h]0;root@7227a5e7c6ed: /root@7227a5e7c6ed:/# [7mapt-get -y install nano[27mapt-get -y install nano
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 63%
+
+Reading package lists... 63%
+
+Reading package lists... 64%
+
+Reading package lists... 64%
+
+Reading package lists... 70%
+
+Reading package lists... 70%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+Need to get 280 kB of archives.
+After this operation, 881 kB of additional disk space will be used.
+
+0% [Working]
+            
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 nano amd64 6.2-1 [280 kB]
+
+0% [1 nano 1168 B/280 kB 0%]
+75% [1 nano 263 kB/280 kB 94%]
+                              
+100% [Working]
+              
+Fetched 280 kB in 1s (364 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4393 files and directories currently installed.)
+Preparing to unpack .../archives/nano_6.2-1_amd64.deb ...
+Unpacking nano (6.2-1) ...
+Setting up nano (6.2-1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creati

@@ -1,6 +1,22 @@
 version: "3.8"
 
 services:
+  server:
+    image: todo-be-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 8000:3000
+    environment:
+      - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongo
+      - redis
+    container_name: todo-be-dev
   mongo:
     image: mongo
     ports:

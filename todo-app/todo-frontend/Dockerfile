@@ -17,6 +17,8 @@ FROM nginx:1.20.1-alpine
 
 COPY --from=build-and-test-stage /usr/src/app/build /usr/share/nginx/html
 
+# CMD ["nginx", "-g", "daemon off;"]
+
 # EXPOSE 80
 
 # CMD ["npm", "start"]
